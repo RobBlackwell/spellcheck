@@ -5,10 +5,10 @@
   (:export
    #:*freq*
    #:reset
+   #:initialize
    #:words
    #:train
    #:train-with-file
-   #:correct
-   #:conservative-correct))
+   #:correct))
 
 

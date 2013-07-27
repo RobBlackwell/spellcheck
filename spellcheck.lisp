@@ -34,6 +34,11 @@
   "Adds the list of words from the given file to the frequency distribution."
   (train (words (nstring-downcase (read-file-into-string filename))) :frequency frequency))
 
+(defun initialize ()
+  "Initialize with default settings."
+  (reset)
+  (train-with-file))
+
 (defun edits-1 (word)
   "Returns a list of one character edits of word."
   (let* ((splits (loop for i from 0 upto (length word)
@@ -79,14 +84,5 @@
      maximizing (gethash word frequency 1)
      finally (return word)))
 
-(defun conservative-correct (word &key (frequency *freq*))
-  "Conservative word correction. Only considers edits-1 of words longer than 5 characters."
-  (if (> (length word) 5)
-      (loop for word in (or (known (list word):frequency frequency) 
-			    (known (edits-1 word)) 
-			    (list word))
-	 maximizing (gethash word frequency 1)
-	 finally (return word))
-      word))
 
 

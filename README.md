@@ -16,11 +16,10 @@ Example
 	CL-USER> (ql:quickload "spellcheck")
 	...
 	("spellcheck")
-	CL-USER> (spellcheck:train-with-file)
+	CL-USER> (spellcheck:initialize)
     #<HASH-TABLE :TEST EQUAL :COUNT 29157 {100F1D7233}>
-    CL-USER> (spellcheck:correct "neccesary")
-    "neccesary"
-
+    CL-USER> (spellcheck:correct "supposidly")
+    "supposedly"
 
 Rob Blackwell    
 July 2013
