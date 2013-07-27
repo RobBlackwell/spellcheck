@@ -62,7 +62,7 @@
   "Returns the list of two character edits of word."
   (loop for e1 in (edits-1 word) nconcing
        (loop for e2 in (edits-1 e1)
-	  when (gethash word frequency)
+	  when (gethash e2 frequency)
 	  collect e2)))
 
 (defun known (words &key (frequency *freq*))
