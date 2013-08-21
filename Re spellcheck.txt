@@ -1,0 +1,46 @@
+From:	mail@mikael.jansson.be on behalf of Mikael Jansson <mikael@lisp.se>
+Sent:	19 August 2013 05:29
+To:	Rob Blackwell
+Subject:	Re: spellcheck
+
+Follow Up Flag:	Follow up
+Flag Status:	Flagged
+
+Hi Rob!
+
+Thanks for the encouragement but the code is pretty crappy.  Slap an MIT licence on it in and 
+attribute it to me in case you want to use it for something. :-)
+
+Cheers!
+-- Mikael
+
+On Fri, Jul 26, 2013 at 5:01 PM, Rob Blackwell <rob.blackwell@robblackwell.org.uk> wrote:
+Mikael,
+ 
+I came across your version of Peter Norvig’s Spell Corrector at 
+https://github.com/mikaelj/snippets/blob/master/lisp/spellcheck/spellcheck.lisp 
+ 
+It’s pretty useful and I’d like to try to get it added to the Quicklisp repository please.
+ 
+I wonder whether you would be kind enough to confirm your copyright assignment and license 
+terms please.
+ 
+I have experimented with packaging it as an ASDF installable library at 
+https://github.com/RobBlackwell/spellcheck 
+ 
+I respectfully ask for you permission to use your code in this way. Of course if you would rather 
+have the master and submit to Quicklisp yourself, then please feel free to take any or all of my 
+suggested modifications as you wish.
+ 
+Thank you for your time,
+ 
+Rob Blackwell.
+ 
+Hobbyist Lisper.
+ 
+ 
+
+
+--  
+Mikael Jansson 
+http://mikael.jansson.be 
